@@ -1,6 +1,6 @@
 {
-  "local": {
-    "substrateRpcUrlArray": ["ws://127.0.0.1:9944"],
+  "finney": {
+    "substrateRpcUrlArray": ["wss://entrypoint-finney.opentensor.ai:443"],
     "explorerWsUrlArray": ["ws://127.0.0.1:8000/graphql-ws"]
   }
 }
