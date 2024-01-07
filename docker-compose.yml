@@ -11,7 +11,7 @@ services:
       - '9620:9616'
     environment:
       - DB_CONNECTION=mysql+pymysql://root:root@mysql:3306/polkascan?charset=utf8mb4
-      - SUBSTRATE_RPC_URL=wss://entrypoint-finney.opentensor.ai:443
+      - SUBSTRATE_RPC_URL=wss://archive.chain.opentensor.ai:443
 #      - SUBSTRATE_RPC_URL=ws://host.docker.internal:9944
       - NODE_TYPE=archive
       - SUBSTRATE_SS58_FORMAT=42
