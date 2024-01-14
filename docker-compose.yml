@@ -100,7 +100,7 @@ services:
     image: mysql:latest
     volumes:
       - 'mysql-data:/var/lib/mysql'
-      - 'mysql-cnf:/usr/etc'
+      - 'mysql-cnf:~'
     ports:
       - '33061:3306'
     environment:
