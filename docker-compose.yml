@@ -100,13 +100,11 @@ services:
     image: mysql:latest
     volumes:
       - 'mysql-data:/var/lib/mysql'
-      #- './my.cnf:'
     ports:
       - '33061:3306'
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=polkascan
-    #command: --innodb_force_recovery=1
 
   redis:
     image: "redis:latest"
@@ -114,4 +112,3 @@ services:
 volumes:
   #substrate-node:
   mysql-data:
-
