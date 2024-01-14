@@ -106,7 +106,7 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=polkascan
-    command: --innodb_force_recovery=4
+    command: --innodb_force_recovery=1
 
   redis:
     image: "redis:latest"
