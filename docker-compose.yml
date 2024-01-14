@@ -100,6 +100,7 @@ services:
     image: mysql:latest
     volumes:
       - 'mysql-data:/var/lib/mysql'
+      - 'mysql-cnf:/etc/my.cnf'
     ports:
       - '33061:3306'
     environment:
@@ -112,4 +113,5 @@ services:
 volumes:
   #substrate-node:
   mysql-data:
+  mysql-cnf:
 
