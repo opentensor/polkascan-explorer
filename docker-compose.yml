@@ -98,6 +98,7 @@ services:
 
   mysql:
     image: mysql:latest
+    restart: unless-stopped
     volumes:
       - 'mysql-data:/var/lib/mysql'
     ports:
@@ -107,6 +108,7 @@ services:
       - MYSQL_DATABASE=polkascan
 
   redis:
+    restart: unless-stopped
     image: "redis:latest"
 
 volumes:
